@@ -1,0 +1,11 @@
+--포린키 추가
+alter table users 
+add constraint userservers
+foreign key (server_id)
+references servers (server_id);
+
+--테이블 생성
+create table stonecategory(
+stonecategory_id int primary key auto_increment,
+categoryname varchar(8)
+)default character set utf8;
